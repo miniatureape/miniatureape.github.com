@@ -1,0 +1,102 @@
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background: #fff;
+  margin: 0;
+  touch-action: manipulation;
+}
+
+.wrapper {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.prohibition-container {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    background: #efefef;
+}
+
+.prohibition-spine {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 25px;
+    background: #afafaf;
+}
+
+.prohibition-knock {
+    position: absolute;
+    opacity: 0;
+    top: 15px;
+    left: 250px;
+    background: #9f9f9f;
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    transition-property: left, opacity;
+    transition-duration: 1s;
+}
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 38px;
+  height: 21px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: red;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 21px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+
