@@ -471,7 +471,6 @@ var app = (function () {
             },
 
             start: function() {
-                console.log('attaching event to knocker');
                 this.knock = [];
                 this.handler = this.handleKnock.bind(this);
                 elem.addEventListener(getListenerName(), this.handler);
@@ -579,11 +578,11 @@ var app = (function () {
     const createDOMRenderer = function(mount, opts) {
 
         const defaults = {
-            width: 500,
+            width: 400,
             height: 50,
-            horizontalPadding: 20,
+            horizontalPadding: 10,
             knockHeight: 10,
-            knockWidth: 20,
+            knockWidth: 10,
             bgColor: "#EFEFEF",
             fgColor: "#AFAFAF",
             knockColor: "#9F9F9F",

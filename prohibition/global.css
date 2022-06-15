@@ -21,7 +21,7 @@ body {
 }
 
 .prohibition-container {
-    width: 500px;
+    width: 400px;
     height: 50px;
     position: relative;
     background: #efefef;
@@ -38,12 +38,12 @@ body {
 .prohibition-knock {
     position: absolute;
     opacity: 0;
-    top: 15px;
+    top: 20px;
     left: 250px;
     background: #9f9f9f;
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
     transition-property: left, opacity;
     transition-duration: 1s;
 }
